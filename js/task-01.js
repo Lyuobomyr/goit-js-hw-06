@@ -6,7 +6,7 @@ console.log(`Number of categories: ${numberOfCategories.length}`);
 const item = document.querySelectorAll('.item')
 const categories = item.forEach(item => {
     const categoriesName = item.firstElementChild.innerHTML
-    const categoriesElements = item.querySelectorAll("ul li")
+    const categoriesElements = item.querySelectorAll("ul li") // item.lastElementChild.children
     
     console.log(`Category: ${categoriesName}`)
     console.log(`Elements: ${categoriesElements.length}`)
